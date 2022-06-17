@@ -7,6 +7,7 @@
 		<result property = "name" column="NAME"/>
 		<result property = "password" column="PASSWORD"/>
 		<result property = "phone" column="PHONE"/>
+<<<<<<< HEAD
 	</resultMap>	
 	
 	<insert id = "insert" parameterType="Register" >
@@ -15,6 +16,16 @@
 	
 	<select id = "selectById" parameterType="String" resultMap="CustomerResultMap">
 	select id,name,password,phone from CUS where id = #{id}
+=======
+	</resultMap>
+	
+	<insert id = "insert" parameterType="Register" >
+	insert into CUS values(#{id},#{name},#{password},#{phone})
+	</insert>
+	
+	<select id = "selectById" parameterType="String" resultMap="CustomerResultMap">
+	select * from CUS where id = #{id}
+>>>>>>> branch 'main' of https://github.com/Kohaneul/MyBatis.git
 	</select>
 	
 

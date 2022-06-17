@@ -3,7 +3,10 @@ package custom.register.service;
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< HEAD
 import org.apache.ibatis.annotations.Param;
+=======
+>>>>>>> branch 'main' of https://github.com/Kohaneul/MyBatis.git
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

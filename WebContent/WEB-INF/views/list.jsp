@@ -20,6 +20,7 @@
 <tbody>
 <c:forEach items="#{list}" var = "list">
 	<tr>
+<<<<<<< HEAD
 	<td><a href="detail?id=${list.id}" name = "id">${list.id}</a></td>
 	<td>${list.name}</td>
 
@@ -35,3 +36,17 @@
 
 
 
+=======
+	<td><a href="detail" name = "id">${list.id}</td></a>
+	<td>${list.name}</td>
+
+	</tr>
+
+</c:forEach>
+</tbody>
+</table>
+<a href="main"><button>메인</button></a>
+</center>
+</body>
+</html>
+>>>>>>> branch 'main' of https://github.com/Kohaneul/MyBatis.git
