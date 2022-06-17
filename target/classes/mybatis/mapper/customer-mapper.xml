@@ -7,14 +7,14 @@
 		<result property = "name" column="NAME"/>
 		<result property = "password" column="PASSWORD"/>
 		<result property = "phone" column="PHONE"/>
-	</resultMap>
+	</resultMap>	
 	
 	<insert id = "insert" parameterType="Register" >
 	insert into CUS values(#{id},#{name},#{password},#{phone})
 	</insert>
 	
 	<select id = "selectById" parameterType="String" resultMap="CustomerResultMap">
-	select * from CUS where id = #{id}
+	select id,name,password,phone from CUS where id = #{id}
 	</select>
 	
 

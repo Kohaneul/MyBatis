@@ -20,7 +20,7 @@
 <tbody>
 <c:forEach items="#{list}" var = "list">
 	<tr>
-	<td><a href="detail" name = "id">${list.id}</td></a>
+	<td><a href="detail?id=${list.id}" name = "id">${list.id}</a></td>
 	<td>${list.name}</td>
 
 	</tr>
@@ -32,3 +32,6 @@
 </center>
 </body>
 </html>
+
+
+
